@@ -35,6 +35,12 @@ public class Exercise001 {
         return strB.toString();
     }
 
+    /**
+     * Count the number of Linux users
+     *
+     * @param users List of all users
+     * @return An integer
+     */
     public int countLinuxUsers(List<User> users) {
         final String LINUX =  "Linux";
         int linuxCount = 0;
