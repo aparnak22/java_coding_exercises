@@ -2,18 +2,25 @@ package com.techreturners.exercise004;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
+/**
+ * Class adds 1 GIGA SECOND to the given date or date time  .
+ */
 public class Exercise004 {
 
+    LocalDateTime localDateTime ;
+    long GIGA_SECONDS = 1000000000 ;
+
     public Exercise004(LocalDate date) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        localDateTime = LocalDateTime.of(date, LocalTime.MIDNIGHT ).plusSeconds(GIGA_SECONDS);
     }
 
     public Exercise004(LocalDateTime dateTime) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        localDateTime = dateTime.plusSeconds(GIGA_SECONDS);
     }
 
     public LocalDateTime getDateTime() {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
+        return localDateTime ;
     }
 }

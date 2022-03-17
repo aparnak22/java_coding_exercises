@@ -20,17 +20,17 @@ public class Exercise004Test {
         assertEquals(expected, ex004.getDateTime());
     }
 
-    @Ignore("You can remove this @ignore annotation to run the test")
+
     @Test
     public void checkGetDateTimeWhenBothDateAndTimeIsSpecified() {
 
-        Exercise004 ex004 = new Exercise004(LocalDateTime.of(2021, Month.MARCH, 4, 23, 22, 0, 0));
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of( 2021, Month.MARCH, 4, 23, 22, 0, 0));
         LocalDateTime expected = LocalDateTime.of(2052, Month.NOVEMBER, 11, 1, 8, 40);
 
         assertEquals(expected, ex004.getDateTime());
     }
 
-    @Ignore("You can remove this @ignore annotation to run the test")
+
     @Test
     public void checkGetDateTimeWhenBothDateAndTimeIsSpecifiedWithDayRollOver() {
 
