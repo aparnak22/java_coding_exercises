@@ -75,5 +75,19 @@ public class RomanNumeralConverterTest {
         assertEquals(20,rnConverter.getDecimalNumberFor("XX"));
     }
 
+    @Test
+    public void test20Plus(){
+        assertEquals(21,rnConverter.getDecimalNumberFor("XXI"));
+        assertEquals(24,rnConverter.getDecimalNumberFor("XXIV"));
+        assertEquals(25,rnConverter.getDecimalNumberFor("XXV"));
+        assertEquals(28,rnConverter.getDecimalNumberFor("XXVIII"));
+    }
 
+    @Test
+    public void test30Plus(){
+        assertEquals(30,rnConverter.getDecimalNumberFor("XXX"));
+        assertEquals(34,rnConverter.getDecimalNumberFor("XXXIV"));
+        assertEquals(36,rnConverter.getDecimalNumberFor("XXXVI"));
+        assertEquals(39,rnConverter.getDecimalNumberFor("XXXIX"));
+    }
 }
